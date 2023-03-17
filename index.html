@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSV to JSON Converter</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+    />
+  </head>
+  <body class="bg-gray-200">
+    <div class="container mx-auto max-w-2xl pt-10">
+      <h1 class="text-3xl font-bold mb-8">CSV to JSON Converter</h1>
+      <div class="mb-8">
+        <label
+          class="block text-gray-700 text-lg font-bold mb-2"
+          for="csvFileInput"
+        >
+          Choose a CSV file to convert:
+        </label>
+        <div class="flex items-center justify-between border rounded-lg px-4 py-3 bg-white">
+          <input
+            class="appearance-none text-gray-700 leading-tight focus:outline-none"
+            id="csvFileInput"
+            type="file"
+          />
+          <button
+            id="browseBtn"
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+          >
+            Browse
+          </button>
+        </div>
+      </div>
+      <button
+        id="convertBtn"
+        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+      >
+        Convert to JSON
+      </button>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
